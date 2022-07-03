@@ -1,0 +1,22 @@
+class Method1 
+{
+	public static void m1()
+	{
+		int x=10;
+		int y=20;
+		int z=x+y;
+		System.out.println("the value of z is"+z);
+	}
+	public static void m2()
+	{
+		System.out.println("java is basic");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("main starts");
+		m1();
+		m2();
+		System.out.println("main ends");
+
+	}
+}
