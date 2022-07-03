@@ -1,0 +1,26 @@
+class AjayFamily 
+{
+	void unlockPhone(String pattern)
+	{
+		System.out.println("phone unlocked using pattern");
+	}
+	void unlockPhone(char fingerprint)
+	{
+		System.out.println("phone unlocked using fingerprint");
+	}
+	void unlockPhone(byte facerecognition)
+	{
+		System.out.println("phone unlocked using facerecognition");
+	}
+	void unlockPhone(int password)
+	{
+		System.out.println("phone unlock using password");
+	}
+
+	public static void main(String[] args) 
+	{
+		AjayFamily sweta=new AjayFamily();
+		sweta.unlockPhone(45);
+		
+	}
+}
