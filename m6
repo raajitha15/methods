@@ -1,0 +1,37 @@
+class NetBanking 
+{
+	public static void transfer(String atm)
+	{
+		System.out.println("money will be transfered using ATM");
+	}
+	public static void transfer()
+	{
+		System.out.println("money transfered using TF");
+	}
+	public static void transfer(long acnum)
+	{
+		System.out.println("money transfered usingIB");
+	}
+	public static void transfer(long num,String upi)
+	{
+		System.out.println("money transfered using upi");
+	}
+}
+class Customer extends NetBanking
+{
+	public static void main(String[]args)
+	{
+		Customer c1=new Customer();
+		c1.transfer("AM");
+		Customer c2=new Customer();
+		c2.transfer(475855743L);
+		Customer c3=new Customer();
+		c3.transfer(47574635L,"@ybl");
+		Customer c4=new Customer();
+		c4.transfer();
+		Customer c5=new Customer();
+		c5.transfer('j');
+	}
+}
+
+
