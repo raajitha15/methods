@@ -1,0 +1,41 @@
+class A 
+{
+	public void display()
+	{
+		System.out.println("class A display method");
+	}
+	public void show()
+	{
+		System.out.println("class A show method");
+	}
+}
+ class B extends A
+{
+	public void display()
+	{
+		System.out.println("class B display method");
+	}
+	public static void view()
+	{
+		System.out.println("class B view method");
+	}
+}
+class Test2
+{
+	public static void main(String[]args)
+	{
+		System.out.println("only parent object is created");
+		A a=new A();
+		a.display();
+		a.show();
+		System.out.println("only child object is created");
+	    B b=new B();
+		b.display();
+		b.show();
+		b.view();
+		System.out.println("when upcasting object is created");
+		A ob=new B();
+		ob.display();
+		ob.show();
+	}
+}
